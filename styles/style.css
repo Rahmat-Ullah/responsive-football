@@ -7,3 +7,82 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+
+/* Header section */
+
+.container {
+    display: flex;
+    position: relative;
+    width: 1340px;
+    height: 577px;
+    background-color: #2D25A0;
+}
+
+.header-info {
+    font-size: 64px;
+    font-weight: bold;
+    font-style: normal;
+    margin-left: 156px;
+    margin-top: 100px;
+    color: white;
+    line-height: 0;
+}
+
+.container img {
+    position: absolute;
+    width: 556px;
+    height: 438px;
+    margin-left: 156px;
+    margin-top: 50px;
+    transition: 2s ease-in-out;
+}
+
+.header-photo:hover {
+    transform: rotate(360deg);
+    transition: transform 2s ease-in-out;
+}
+
+a {
+    position: absolute;
+    color: white;
+    background-color: #E02C6D;
+    text-decoration: none;
+    padding: 10px 25px 10px 25px;
+    margin-left: 156px;
+}
+
+
+/* players section start */
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 400px;
+    height: 500px;
+    margin-top: 30px;
+    margin-left: 50px;
+    background-color: white;
+    /* box-shadow: 5px 5px 5px 5px rgb(51, 47, 47); */
+}
+
+.player img {
+    width: 350px;
+    height: 300px;
+    padding: 10px;
+    margin-left: 30px;
+}
+
+.player-info {
+    position: static;
+    width: 350px;
+    height: 250px;
+    padding: 10px;
+    margin-left: 30px;
+}
